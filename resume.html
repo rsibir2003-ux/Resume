@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sibi R - Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:white;
+    padding:20px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#0077ff;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:left;
+    position:relative;
+}
+
+.hero-bg{
+    position:absolute;
+    font-size:180px;
+    font-weight:bold;
+    color:rgba(0,0,0,0.05);
+    z-index:0;
+}
+
+.hero-content{
+    z-index:1;
+    max-width:700px;
+}
+
+.hero-content h1{
+    font-size:60px;
+    color:#222;
+}
+
+.hero-content h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    font-size:40px;
+    margin-bottom:30px;
+    color:#222;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.education table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.education th,
+.education td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+.education th{
+    background:#0077ff;
+    color:white;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.skill-box{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.08);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-bg{
+    font-size:80px;
+}
+
+.hero-content h1{
+    font-size:40px;
+}
+
+.hero-content h2{
+    font-size:24px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="about">
+    <div class="hero-bg">SIBI</div>
+
+    <div class="hero-content">
+        <h1>SIBI R</h1>
+        <h2>B.Tech AIML Student</h2>
+
+        <p>
+            Looking to work in an organization with a dynamic work environment
+            where I can contribute my technical and management skills while
+            enhancing my knowledge of emerging technologies.
+        </p>
+    </div>
+</section>
+
+<div class="container">
+
+<section id="education" class="education">
+    <h2 class="section-title">Education</h2>
+
+    <div class="card">
+        <table>
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Score</th>
+            </tr>
+
+            <tr>
+                <td>B.Tech AIML</td>
+                <td>Kongu Engineering College</td>
+                <td>CGPA 8.15</td>
+            </tr>
+
+            <tr>
+                <td>HSC</td>
+                <td>Karur Vetri Vinayaka School</td>
+                <td>87.60%</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+        <h3>Event Reminder and Scheduling System</h3>
+        <p>
+            Designed and implemented an advanced reminder application
+            using React.js, JavaScript, Min-Heap and Doubly Linked List.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>FloatChat – AI Powered Conversational Interface</h3>
+        <p>
+            Developed an AI-driven chat interface for ARGO datasets.
+            Integrated NLP and visualization tools.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <div class="skill-box">C Programming</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">React.js</div>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="card">
+        <h3>Advanced C Programming</h3>
+    </div>
+
+    <div class="card">
+        <h3>Inplant Training</h3>
+        <p>7 Days Training at CODEBIND Instruments, Erode</p>
+    </div>
+</section>
+
+<section id="strengths">
+    <h2 class="section-title">Strengths</h2>
+
+    <div class="skills">
+        <div class="skill-box">Adaptability</div>
+        <div class="skill-box">Leadership</div>
+        <div class="skill-box">Decision Making</div>
+        <div class="skill-box">Time Management</div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="card">
+        <p><strong>Email:</strong> rsibir2003@gmail.com</p>
+        <p><strong>Phone:</strong> 6374054121</p>
+        <p><strong>Location:</strong> Vangal, Karur</p>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>© 2026 Sibi R | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
